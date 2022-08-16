@@ -1,0 +1,52 @@
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+@import url('https://fonts.googleapis.com/css2?family=DynaPuff&family=Silkscreen&family=Source+Sans+Pro:wght@300&display=swap');
+
+.calculator-shadow {
+    border-radius: 40px;
+    background: #d5aaff;
+    box-shadow:  5px 5px 4px #9779b5,
+    -5px -5px 4px #ffdbff;
+}
+
+.input {
+    border-radius: 10px;
+    background: linear-gradient(315deg, #e4b6ff, #c099e6);
+    box-shadow: -8px -8px 16px #8d70a8,
+    8px 8px 16px #ffe4ff;
+}
+
+.button {
+    border-radius: 10px;
+    background: #d5aaff;
+    box-shadow: 5px 5px 7px #a685c7,
+        5px -5px 7px #ffcfff;
+}
+
+
+.c {
+    float: left;
+    width: 100vw;
+    height: 350px;
+    overflow: hidden;
+}
+
+.card-home {
+    position: absolute;
+    left: 0;
+    display: flex;
+    animation: scroll 10s linear 1s infinite;
+}
+
+.card-home>svg {
+    width: 100vw;
+}
+
+@keyframes scroll {
+    100% {
+        left: -100vw;
+    }
+
+    /* top is the number of spans (in this case 8) multiplied by span height (45px as described above)*/
+}
