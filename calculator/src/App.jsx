@@ -48,7 +48,7 @@ const App = () => {
 
           <div className='flex flex-row items-center justify-between'>
 
-            <div className='text-zinc-500 text'>
+            <div className="tracking-wider text-zinc-500 text font-['Montserrat']">
               {moment(time).format("HH:mm")}
             </div>
 
@@ -71,7 +71,7 @@ const App = () => {
             disabled className="text font-['Source+Sans+Pro:wght@300'] tracking-widest p-4 mt-10 text-xl input w-full text-right input ml-2" />
 
 
-          <div className="grid grid-cols-4 grid-grid-rows-5 text-2xl flex items-center mt-10 gap-6 ml-4 font-['Source+Sans+Pro:wght@300'] text">
+          <div className="grid grid-cols-4 grid-grid-rows-5 text-2xl flex items-center mt-10 gap-6 ml-4 font-['Montserrat'] text">
             <div onClick={() => setCount("0")} className='flex justify-center items-center button hover:cursor-pointer w-full h-full aspect-square'>
               AC
             </div>
@@ -156,7 +156,10 @@ const App = () => {
             </div>
           </div>
         </div>
-        <div className='absolute top-5 right-5  z-[9999]'>
+        <div className="absolute top-5 right-5  z-[9999] flex flex-row items-center gap-4 font-semibold font['Montserrat']">
+          <div>
+            DARK MODE
+          </div>
           <ReactSwitch onChange={toggleTheme} checked={theme === "light"}>
 
           </ReactSwitch>
