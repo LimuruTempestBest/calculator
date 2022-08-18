@@ -3,27 +3,64 @@
 @tailwind utilities;
 @import url('https://fonts.googleapis.com/css2?family=DynaPuff&family=Silkscreen&family=Source+Sans+Pro:wght@300&display=swap');
 
-.calculator-shadow {
+#light{
+    background-color: bg-purple-300 ;
+}
+
+#dark{
+    background-color: #7c31c6;
+}
+
+
+
+#light .calculator-shadow {
     border-radius: 40px;
     background: #d5aaff;
     box-shadow:  5px 5px 4px #9779b5,
     -5px -5px 4px #ffdbff;
 }
 
-.input {
+#dark .calculator-shadow {
+    border-radius: 40px;
+    background: #976aea;
+    box-shadow:  5px 5px 4px #805ac7,
+    -5px -5px 4px #ae7aff;
+}
+#light .input {
     border-radius: 10px;
     background: linear-gradient(315deg, #e4b6ff, #c099e6);
     box-shadow: -8px -8px 16px #8d70a8,
     8px 8px 16px #ffe4ff;
 }
 
-.button {
+#dark .input {
     border-radius: 10px;
-    background: #d5aaff;
-    box-shadow: 5px 5px 7px #a685c7,
-        5px -5px 7px #ffcfff;
+    background: linear-gradient(315deg, #885fd3, #a271fa);
+    box-shadow: -8px -8px 16px #805ac7,
+    8px 8px 16px #ae7aff;
 }
 
+#light .button {
+    border-radius: 24px;
+    background: linear-gradient(145deg, #c2a2e5, #e7c1ff);
+    box-shadow:  6px 6px 12px #c0a0e2,
+    -6px -6px 12px #f0c8ff; 
+}
+
+#dark .button {
+    border-radius: 24px;
+    background: linear-gradient(145deg, #885fd3, #a271fa);
+    box-shadow:  6px 6px 12px #805ac7,
+    -6px -6px 12px #ae7aff;
+}
+
+#light .text {
+    color: #000000;
+}
+
+#dark .text {
+    color: #fdfdfd;
+}
 
 .c {
     float: left;
@@ -50,3 +87,6 @@
 
     /* top is the number of spans (in this case 8) multiplied by span height (45px as described above)*/
 }
+
+
+
