@@ -19,7 +19,7 @@ const App = () => {
 
   const [count, setCount] = useState(0);
 
-  const [theme, setTheme] = useState("light");
+  const [theme, setTheme] = useState("dark");
 
   const toggleTheme = () => {
     setTheme((curr) => (curr === "light" ? "dark" : "light"));
@@ -68,10 +68,10 @@ const App = () => {
 
 
           <input value={count}
-            disabled className="text font-['Source+Sans+Pro:wght@300'] tracking-widest p-4 mt-10 text-xl input w-full text-right input ml-2" />
+            disabled className="text font-['Montserrat'] tracking-widest p-4 mt-10 text-xl input w-full text-right input ml-2" />
 
 
-          <div className="grid grid-cols-4 grid-grid-rows-5 text-2xl flex items-center mt-10 gap-6 ml-4 font-['Montserrat'] text">
+          <div className="grid grid-cols-4 grid-grid-rows-5 text-2xl flex items-center mt-10 gap-6 ml-4 font-['Montserrat'] font-light text">
             <div onClick={() => setCount("0")} className='flex justify-center items-center button hover:cursor-pointer w-full h-full aspect-square'>
               AC
             </div>
@@ -156,11 +156,11 @@ const App = () => {
             </div>
           </div>
         </div>
-        <div className="absolute top-5 right-5  z-[9999] flex flex-row items-center gap-4 font-semibold font['Montserrat']">
+        <div className="absolute top-5 right-5  z-[9999] flex flex-row items-center gap-4 font-semibold font-['Montserrat'] text">
           <div>
             DARK MODE
           </div>
-          <ReactSwitch onChange={toggleTheme} checked={theme === "light"}>
+          <ReactSwitch onChange={toggleTheme} checked={theme === "dark"}>
 
           </ReactSwitch>
         </div>
